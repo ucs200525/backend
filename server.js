@@ -15,11 +15,7 @@ dotenv.config();
 const app = express();
 
 // Enable CORS for all routes
-app.use(cors({
-   origin: 'https://ecs-backend-xsuv.onrender.com/', //  Frontend domain
-  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed HTTP methods
-  credentials: true, // Enable sending cookies with cross-origin requests
-}));
+app.use(cors());
 
 
 // Middleware to parse JSON bodies
